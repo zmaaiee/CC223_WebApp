@@ -17,12 +17,11 @@ function markComplete() {
 
   selectedTopic.classList.add("completed");
   completedTopics.add(selectedTopic);
-  selectedTopic.classList.remove("selected"); // Deselect after marking as complete
-  selectedTopic = null; // Reset selection
+  selectedTopic.classList.remove("selected"); 
+  selectedTopic = null; 
 
   updateProgress();
 
-  // Send completed topic to backend
   fetch("http://localhost:3000/api/message")
     .then(response => response.json())
     .then(data => console.log("Message from backend:", data.message))

@@ -97,7 +97,7 @@ p {
 }
 
 .completed {
-  background-color: #A3B565 !important; /* Green shade */
+  background-color: #A3B565 !important; 
   color: white !important;
   font-weight: bold;
   position: relative;
@@ -123,6 +123,6 @@ p {
 
 #complete-btn:hover {
   background-color: #E6531E;
-  transform: scale(1.1); /* Parang may bounce effect */
+  transform: scale(1.1); 
   transition: all 0.3s ease-in-out;
 }
