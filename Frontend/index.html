@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Learning Guide</title>
+  <!-- Correct Google Fonts Link for Nunito -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>HTML Learning Guide</h1>
+    <p>Learn HTML with <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a></p>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <p id="progress-text">0% completed</p>
+
+    <ul id="topic-list">
+      <li class="topic" id="topic-0" onclick="selectTopic(0)">Basic</li>
+      <li class="topic" id="topic-1" onclick="selectTopic(1)">Elements</li>
+      <li class="topic" id="topic-2" onclick="selectTopic(2)">Attributes</li>
+      <li class="topic" id="topic-3" onclick="selectTopic(3)">Headings</li>
+      <li class="topic" id="topic-4" onclick="selectTopic(4)">Paragraphs</li>
+      <li class="topic" id="topic-5" onclick="selectTopic(5)">Styles</li>
+      <li class="topic" id="topic-6" onclick="selectTopic(6)">Formatting</li>
+      <li class="topic" id="topic-7" onclick="selectTopic(7)">Quotations</li>
+      <li class="topic" id="topic-8" onclick="selectTopic(8)">Comments</li>
+      <li class="topic" id="topic-9" onclick="selectTopic(9)">Colors</li>
+    </ul>
+
+    <button id="complete-btn" onclick="markComplete()">Complete</button>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

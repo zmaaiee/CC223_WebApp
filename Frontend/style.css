@@ -1,0 +1,128 @@
+.container {
+  max-width: 500px; 
+  background: white; 
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  margin: 20px auto;
+  text-align: center; 
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #FCDD9D;
+}
+
+h1 {
+  font-size: 28px;
+  color: #F1642E;
+  text-transform: uppercase;
+}
+
+a {
+  color: #F1642E; 
+  text-decoration: underline; 
+  font-weight: 600; 
+}
+
+a:hover {
+  color: #D9541E; 
+  text-decoration-color: #D9541E;
+}
+
+p {
+  color: #F1642E; 
+}
+
+#progress-text {
+  color: #5F6F2E; 
+  font-weight: 600; 
+}
+
+.progress-container {
+  width: 60%;
+  background-color: #FDF8E2;
+  height: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #F1642E;
+  transition: width 0.5s;
+}
+
+#topic-list {
+  list-style: none; 
+  padding: 0;
+  margin: 0 auto; 
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px 50px; 
+  justify-content: center; 
+}
+
+.topic {
+  font-weight: 600;
+  color: #5F6F2E;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #A3B565;
+  background-color: white;
+  transition: background-color 0.3s;
+  border-radius: 30px;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic:hover {
+  background-color: #A3B565;
+  color: white;
+  transform: scale(1.05); 
+  transition: all 0.3s ease-in-out;
+}
+
+.selected {
+  background-color: #A3B565 !important;
+  color: white;
+}
+
+.completed {
+  background-color: #A3B565 !important; /* Green shade */
+  color: white !important;
+  font-weight: bold;
+  position: relative;
+}
+
+#complete-btn {
+  font-family: 'Nunito', sans-serif;
+  background-color: #F1642E;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  margin: 20px auto 0; 
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#complete-btn:hover {
+  background-color: #E6531E;
+  transform: scale(1.1); /* Parang may bounce effect */
+  transition: all 0.3s ease-in-out;
+}
